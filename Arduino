@@ -1,0 +1,118 @@
+
+#define trigPin 8
+#define echoPin 2
+#define speaker 6
+#define button 3
+#define red 9 
+#define green 10
+#define blue 11
+
+//הגדרת משתנים
+unsigned long time=0;
+unsigned long duration;
+int distance=0;
+int BLUE_PIN = 5; //ערך התחלתי עבור הארת הלד 
+int GREEN_PIN = 5;
+int RED_PIN = 5;
+int analogPin = 2 ;
+int random_variable;
+float static_variable;
+float pie=3.14;
+
+
+//1
+void trigUs()
+{
+ digitalWrite(trigPin, HIGH);
+ delayMicroseconds(10);
+ digitalWrite(trigPin, LOW);
+ attachInterrupt(0, startCount ,RISING);
+}
+
+
+//2
+void startCount()
+{
+ duration=micros();
+ detachInterrupt(0);
+ attachInterrupt(0, measurement, FALLING);
+}
+
+//3
+void measurement()
+{
+ duration=micros()-duration;
+ distance=duration/58;
+ detachInterrupt(0);
+}
+
+
+void powerLed ()
+{
+detachInterrupt(1); //חסום בקשת פסיקה מספר 1
+BLUE_PIN+=20;
+GREEN_PIN+=20;
+RED_PIN+=20;
+if (BLUE_PIN>255) 
+BLUE_PIN =5;
+if (GREEN_PIN>255)
+GREEN_PIN =5;
+if (RED_PIN>255)
+RED_PIN =5;
+analogWrite(red,RED_PIN);
+analogWrite(green,GREEN_PIN);
+analogWrite(blue,BLUE_PIN);
+delay(50);
+attachInterrupt(1, powerLed, FALLING); 
+}
+
+
+void setup()
+
+{
+ Serial.begin(9600);
+ Serial.println("time");
+ pinMode(trigPin, OUTPUT);
+ pinMode(echoPin, INPUT);
+ pinMode(red, OUTPUT);
+ pinMode(green, OUTPUT);
+ pinMode(blue, OUTPUT);
+ pinMode(speaker, OUTPUT);
+ pinMode(button,INPUT_PULLUP);
+ analogWrite(red,RED_PIN);
+ analogWrite(green,GREEN_PIN);
+ analogWrite(blue,BLUE_PIN);
+ attachInterrupt(1, powerLed, FALLING);
+ trigUs();
+ delay(100);
+}
+void loop() {
+ tone(6, distance*5+500);
+ for (int j = 0; j <360 ; j++) {
+   Serial.println(5*cos(j * (PI/180)));
+
+ if(millis()-time>50) {
+ Serial.print(distance);
+ Serial.println();
+
+ trigUs();
+ time=millis();
+ }
+ if(distance<10){
+ digitalWrite(green,255);
+ Serial.print("Bazzer");
+
+ }
+ else if (distance>10 & distance<20)
+ digitalWrite(blue,255);
+ else 
+ digitalWrite(red,255);
+
+ } 
+  random_variable = random(0, 1000);
+  Serial.println("value1:");
+  Serial.print(random_variable);
+  Serial.print(",");
+  Serial.println("value2:");
+  Serial.println(static_variable);
+}
