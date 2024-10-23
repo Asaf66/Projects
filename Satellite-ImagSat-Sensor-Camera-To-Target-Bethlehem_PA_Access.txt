@@ -1,0 +1,93 @@
+                                                                                                                                       14 Aug 2024 20:48:35
+Satellite-ImagSat-Sensor-Camera-To-Target-Bethlehem_PA, Target-Denver_CO, Target-Houston_TX, Target-Las_Vegas_NV, Target-Seattle_WA:  Access Summary Report
+
+
+Camera-To-Bethlehem_PA
+----------------------
+                  Access        Start Time (UTCG)           Stop Time (UTCG)        Duration (sec)
+                  ------    ------------------------    ------------------------    --------------
+                       1    14 Aug 2024 20:17:22.296    14 Aug 2024 20:24:33.964           431.668
+                       2    14 Aug 2024 23:07:45.155    14 Aug 2024 23:29:29.191          1304.035
+                       3    15 Aug 2024 02:09:18.660    15 Aug 2024 02:30:43.989          1285.329
+                       4    15 Aug 2024 05:10:03.625    15 Aug 2024 05:29:47.385          1183.760
+
+Statistics
+----------
+Min Duration           1    14 Aug 2024 20:17:22.296    14 Aug 2024 20:24:33.964           431.668
+Max Duration           2    14 Aug 2024 23:07:45.155    14 Aug 2024 23:29:29.191          1304.035
+Mean Duration                                                                             1051.198
+Total Duration                                                                            4204.792
+
+
+Camera-To-Denver_CO
+-------------------
+                  Access        Start Time (UTCG)           Stop Time (UTCG)        Duration (sec)
+                  ------    ------------------------    ------------------------    --------------
+                       1    14 Aug 2024 23:00:53.149    14 Aug 2024 23:19:32.391          1119.241
+                       2    15 Aug 2024 01:59:07.312    15 Aug 2024 02:20:28.457          1281.145
+                       3    15 Aug 2024 05:00:53.321    15 Aug 2024 05:22:32.826          1299.505
+                       4    15 Aug 2024 08:03:08.763    15 Aug 2024 08:17:17.177           848.414
+
+Statistics
+----------
+Min Duration           4    15 Aug 2024 08:03:08.763    15 Aug 2024 08:17:17.177           848.414
+Max Duration           3    15 Aug 2024 05:00:53.321    15 Aug 2024 05:22:32.826          1299.505
+Mean Duration                                                                             1137.076
+Total Duration                                                                            4548.305
+
+
+Camera-To-Houston_TX
+--------------------
+                  Access        Start Time (UTCG)           Stop Time (UTCG)        Duration (sec)
+                  ------    ------------------------    ------------------------    --------------
+                       1    14 Aug 2024 22:59:05.171    14 Aug 2024 23:20:44.060          1298.888
+                       2    15 Aug 2024 02:05:26.629    15 Aug 2024 02:20:34.815           908.185
+                       3    15 Aug 2024 05:07:21.741    15 Aug 2024 05:27:46.723          1224.982
+                       4    15 Aug 2024 08:09:34.108    15 Aug 2024 08:23:42.050           847.942
+
+Statistics
+----------
+Min Duration           4    15 Aug 2024 08:09:34.108    15 Aug 2024 08:23:42.050           847.942
+Max Duration           1    14 Aug 2024 22:59:05.171    14 Aug 2024 23:20:44.060          1298.888
+Mean Duration                                                                             1069.999
+Total Duration                                                                            4279.998
+
+
+Camera-To-Las_Vegas_NV
+----------------------
+                  Access        Start Time (UTCG)           Stop Time (UTCG)        Duration (sec)
+                  ------    ------------------------    ------------------------    --------------
+                       1    14 Aug 2024 22:58:04.560    14 Aug 2024 23:14:18.274           973.714
+                       2    15 Aug 2024 01:54:45.940    15 Aug 2024 02:15:54.420          1268.480
+                       3    15 Aug 2024 04:58:11.339    15 Aug 2024 05:18:32.253          1220.915
+                       4    15 Aug 2024 07:58:46.817    15 Aug 2024 08:18:46.694          1199.878
+
+Statistics
+----------
+Min Duration           1    14 Aug 2024 22:58:04.560    14 Aug 2024 23:14:18.274           973.714
+Max Duration           2    15 Aug 2024 01:54:45.940    15 Aug 2024 02:15:54.420          1268.480
+Mean Duration                                                                             1165.746
+Total Duration                                                                            4662.986
+
+
+Camera-To-Seattle_WA
+--------------------
+                  Access        Start Time (UTCG)           Stop Time (UTCG)        Duration (sec)
+                  ------    ------------------------    ------------------------    --------------
+                       1    15 Aug 2024 01:55:01.005    15 Aug 2024 02:15:33.134          1232.129
+                       2    15 Aug 2024 04:53:49.102    15 Aug 2024 05:15:28.460          1299.358
+                       3    15 Aug 2024 07:54:24.298    15 Aug 2024 08:11:39.602          1035.304
+
+Statistics
+----------
+Min Duration           3    15 Aug 2024 07:54:24.298    15 Aug 2024 08:11:39.602          1035.304
+Max Duration           2    15 Aug 2024 04:53:49.102    15 Aug 2024 05:15:28.460          1299.358
+Mean Duration                                                                             1188.930
+Total Duration                                                                            3566.790
+
+Global Statistics
+-----------------
+Min Duration           1    14 Aug 2024 20:17:22.296    14 Aug 2024 20:24:33.964           431.668
+Max Duration           2    14 Aug 2024 23:07:45.155    14 Aug 2024 23:29:29.191          1304.035
+Mean Duration                                                                             1119.099
+Total Duration                                                                           21262.872
